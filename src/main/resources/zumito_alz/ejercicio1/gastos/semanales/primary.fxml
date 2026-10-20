@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zumito_alz.ejercicio1.gastos.semanales.PrimaryController">
+   <children>
+      <VBox>
+         <children>
+            <Label text="Alimentacion:" />
+            <TextField fx:id="txtAlim" />
+            <Label text="Refrigerios:" />
+            <TextField fx:id="txtRefr" />
+            <Label text="Transporte:" />
+            <TextField fx:id="txtTrans" />
+            <Label text="Telefonia:" />
+            <TextField fx:id="txtTel" />
+            <Label text="Otros:" />
+            <TextField fx:id="txtOtros" />
+         </children>
+      </VBox>
+      <Button fx:id="btnCalcular" onAction="#btnCalcular_click" text="Calcular Estadisticas" />
+      <VBox>
+         <children>
+            <Label text="Estadisticas" />
+            <Label text="Total Semanal" />
+            <TextField fx:id="txtTotal" />
+            <Label text="Gasto mas Alto" />
+            <TextField fx:id="txtAlto" />
+         </children>
+      </VBox>
+      <Button fx:id="btnLimpiar" onAction="#btnLimpiar_click" mnemonicParsing="false" text="Limpiar" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
